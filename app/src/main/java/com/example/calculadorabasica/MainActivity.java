@@ -3,12 +3,13 @@ package com.example.calculadorabasica;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    String NumeroAntes="";
     String Operacion="+";
+    String NumeroAntes="";
     boolean RealOperacion=true;
     EditText EditText;
 
@@ -75,7 +76,6 @@ public class MainActivity extends AppCompatActivity {
             case R.id.por: Operacion="*"; break;
             case R.id.menos:Operacion="-"; break;
             case R.id.mas:Operacion="+"; break;
-            case R.id.porcentaje:Operacion="%"; break;
         }
     }
 
@@ -95,20 +95,22 @@ public class MainActivity extends AppCompatActivity {
             case "+":
                 Result=Double.parseDouble(NumeroAntes)+Double.parseDouble(ResultadoFinal);
                 break;
-            case "%":
-                Result=Double.parseDouble(NumeroAntes)%Double.parseDouble(ResultadoFinal);
-                break;
         }
         EditText.setText(Result+"");
     }
-
-    /*public void Porcentaje(View view){
-        double no = Double.parseDouble(EditText.getText().toString());
-        RealOperacion=true;
-    }*/
 
     public void BorrarDatos(View view) {
         EditText.setText("");
         RealOperacion=true;
     }
+
+    /*public void Potencia(View view) {
+        Operacion="exp";
+        EditText=findViewById(R.id.pantalla);
+        try {
+            double porcentaje = Double.parseDouble(EditText.getText().toString());
+            EditText.setText("");
+        }catch (NumberFormatException nfe){
+        }
+    }*/
 }

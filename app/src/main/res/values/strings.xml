@@ -18,6 +18,6 @@
     <string name="Punto">.</string>
     <string name="Borrar">⌂</string>
     <string name="Porcentaje">%</string>
-    <string name="Raiz">√</string>
+    <string name="Potencia">^</string>
     <string name="MenosMas">±</string>
 </resources>
