@@ -75,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.por: Operacion="*"; break;
             case R.id.menos:Operacion="-"; break;
             case R.id.mas:Operacion="+"; break;
+            case R.id.porcentaje:Operacion="%"; break;
         }
     }
 
@@ -93,6 +94,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case "+":
                 Result=Double.parseDouble(NumeroAntes)+Double.parseDouble(ResultadoFinal);
+                break;
+            case "%":
+                Result=Double.parseDouble(NumeroAntes)%Double.parseDouble(ResultadoFinal);
                 break;
         }
         EditText.setText(Result+"");

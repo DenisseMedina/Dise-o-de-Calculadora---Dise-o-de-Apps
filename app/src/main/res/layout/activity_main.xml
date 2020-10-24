@@ -42,7 +42,7 @@
                 android:layout_width="0px"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:background="@color/colorDen"
                 android:gravity="center"
                 android:text='@string/Borrar'
@@ -57,28 +57,16 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:background="@color/colorDen"
+                android:background="@color/colorVerde"
                 android:gravity="center"
                 android:text='@string/Porcentaje'
                 android:id="@+id/porcentaje"
-                android:onClick=""
+                android:onClick="Porcentaje"
                 android:textColor="@color/colorWhite"
                 android:textSize="60sp"
-                tools:ignore="ButtonStyle" />
+                tools:ignore="ButtonStyle,OnClick" />
 
-            <Button
-                android:layout_width="0px"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:background="@color/colorDen"
-                android:gravity="center"
-                android:text='@string/Raiz'
-                android:onClick="click"
-                android:textColor="@color/colorWhite"
-                android:id="@+id/raiz"
-                android:textSize="60sp"
-                tools:ignore="ButtonStyle" />
+
 
             <Button
                 android:id="@+id/entre"
