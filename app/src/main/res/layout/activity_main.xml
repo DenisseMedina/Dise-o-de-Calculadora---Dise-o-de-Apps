@@ -258,12 +258,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                android:text='@string/MenosMas'
                 android:textSize="60sp"
+                android:onClick="click"
                 android:background="@color/colorBlack"
                 android:textColor="@color/colorWhite"
                 android:gravity="center"
-                android:id="@+id/menosmas"
                 tools:ignore="ButtonStyle" />
 
             <Button

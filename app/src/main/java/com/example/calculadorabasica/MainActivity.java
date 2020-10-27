@@ -61,9 +61,6 @@ public class MainActivity extends AppCompatActivity {
             case R.id.punto:
                 num +=".";
                 break;
-            case R.id.menosmas:
-                num +="-"+num;
-                break;
         }
         EditText.setText(num);
     }
@@ -104,13 +101,4 @@ public class MainActivity extends AppCompatActivity {
         RealOperacion=true;
     }
 
-    /*public void Potencia(View view) {
-        Operacion="exp";
-        EditText=findViewById(R.id.pantalla);
-        try {
-            double porcentaje = Double.parseDouble(EditText.getText().toString());
-            EditText.setText("");
-        }catch (NumberFormatException nfe){
-        }
-    }*/
 }
